@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photos — Thistle Dew Green</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse our photo gallery of beautiful organic cut flowers grown at Thistle Dew Green — bouquets, arrangements, and farm life.">
+  <meta name="google-adsense-account" content="ca-pub-3852182085462712">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="thistledew.css">
+  <link rel="icon" type="image/png" href="Flowerlogo-real.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3852182085462712" crossorigin="anonymous"></script>
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="photos.html" class="active">Pictures</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header hidden">
+    <h1>Photo Album</h1>
+  </div>
+
+  <div class="container">
+
+    <section class="hidden" style="padding:0 0 12px;">
+      <div class="card" style="padding:28px;">
+        <div class="photo-grid">
+          <img src="flowers.png" alt="Our Beautiful Flowers">
+          <img src="flowers1png.png" alt="Beautiful Blooms">
+          <img src="flowers3png.png" alt="Colorful Arrangement">
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-section">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3852182085462712"
+           data-ad-slot="2027760862"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section class="hidden" style="padding:0 0 12px;">
+      <div class="card" style="padding:28px;">
+        <div class="photo-grid">
+          <img src="IMG_7074.jpeg" alt="Pink Flowers">
+          <img src="IMG_3377.jpeg" alt="Full Vase Arrangement">
+          <img src="flowers2.png" alt="More Beautiful Flowers">
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-section">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3852182085462712"
+           data-ad-slot="2027760862"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section class="hidden" style="padding:0 0 12px;">
+      <div class="card" style="padding:28px;">
+        <div class="photo-grid">
+          <img src="flowers3png.png" alt="Flower Arrangement">
+          <img src="Flowerlogo-real.png" alt="Thistle Dew Green">
+          <img src="Flowers3.png" alt="Seasonal Blooms">
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>All content copyright &copy; 2025 Thistle Dew Green &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    window.addEventListener('load', function() {
+      const images = document.querySelectorAll('.photo-grid img');
+      images.forEach(function(img) {
+        img.addEventListener('click', function() {
+          if (this.classList.contains('enlarged')) {
+            this.classList.remove('enlarged');
+          } else {
+            images.forEach(function(other) { other.classList.remove('enlarged'); });
+            this.classList.add('enlarged');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
