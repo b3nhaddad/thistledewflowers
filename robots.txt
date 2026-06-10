@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thistledewflowers.com/sitemap.xml
+
+# Content signals (https://contentsignals.org)
+# search:   building a search index and returning hyperlinks/excerpts
+# ai-input: using content for retrieval-augmented generation / AI search answers
+# ai-train: training or fine-tuning AI models
+# Leaving these unset neither grants nor restricts permission.
