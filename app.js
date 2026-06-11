@@ -11,6 +11,7 @@ entries.forEach((entry) =>{
 });
 });
 
+
 const hiddenElements = document.querySelectorAll('.hidden, .left-scroll');
 
 hiddenElements.forEach((el) => observer.observe(el));

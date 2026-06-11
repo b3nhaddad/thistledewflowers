@@ -335,6 +335,13 @@ footer p {
   margin: 0;
 }
 
+.footer-location {
+  font-style: italic;
+  font-size: 13px;
+  margin-bottom: 6px !important;
+  opacity: 0.85;
+}
+
 /* ── Animations ── */
 .hidden {
   opacity: 0;
