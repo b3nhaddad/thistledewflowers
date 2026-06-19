@@ -7,3 +7,9 @@
 
 # SEO audit reports (not part of deployed site)
 seo-audit/
+
+# macOS
+.DS_Store
+
+# unused/raw source images kept locally, not part of deployed site
+images/unused/
