@@ -17,6 +17,9 @@
 /contacts
   Content-Type: text/html; charset=utf-8
 
+/support
+  Content-Type: text/html; charset=utf-8
+
 /donate
   Content-Type: text/html; charset=utf-8
 

@@ -1,0 +1,13 @@
+# Files in this directory that should not be uploaded as live site assets
+.git
+.gitignore
+.assetsignore
+.claude
+.DS_Store
+wrangler.jsonc
+seo-audit
+images/unused
+node_modules
+.wrangler
+.dev.vars*
+.env*
