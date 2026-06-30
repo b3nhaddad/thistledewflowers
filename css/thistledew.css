@@ -233,31 +233,6 @@ a:hover {
   box-shadow: 0 12px 40px rgba(0,0,0,0.4);
 }
 
-/* ── Ad sections ── */
-.ad-section {
-  margin: 36px auto;
-  padding: 16px 16px 12px;
-  background-color: #f4f7ee;
-  border: 1px solid #d5e4be;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.ad-section::before {
-  content: "Advertisement";
-  display: block;
-  font-size: 11px;
-  color: #999;
-  font-family: Arial, sans-serif;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.adsbygoogle {
-  display: block;
-}
-
 /* ── Instagram / contact ── */
 .section-label {
   font-family: 'Playfair Display', Georgia, serif;
