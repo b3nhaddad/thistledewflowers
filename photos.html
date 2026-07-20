@@ -11,19 +11,21 @@
   <meta property="og:title" content="Photos — Thistle Dew Green | Colorado Flower Farm Gallery">
   <meta property="og:description" content="See our organic cut flowers, bouquets, and arrangements grown on our Colorado Springs flower farm.">
   <meta property="og:url" content="https://thistledewflowers.com/photos">
-  <meta property="og:image" content="https://thistledewflowers.com/Flowerlogo-real.png">
+  <meta property="og:image" content="https://thistledewflowers.com/images/Flowerlogo-real.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Photos — Thistle Dew Green | Colorado Flower Farm Gallery">
   <meta name="twitter:description" content="See our organic cut flowers, bouquets, and arrangements grown on our Colorado Springs flower farm.">
-  <meta name="twitter:image" content="https://thistledewflowers.com/Flowerlogo-real.png">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="twitter:image" content="https://thistledewflowers.com/images/Flowerlogo-real.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap"></noscript>
   <link rel="stylesheet" href="css/thistledew.css">
-  <link rel="icon" type="image/png" href="images/Flowerlogo-real.png">
-  <script type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-  <script type="text/javascript">
-      aclib.runAutoTag({
-          zoneId: 'o96niwzxs1',
-      });
+  <link rel="icon" type="image/png" href="images/favicon-64.png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
   </script>
   <script defer src="js/app.js"></script>
 </head>
@@ -36,6 +38,7 @@
       <li><a href="/photos" class="active">Pictures</a></li>
       <li><a href="/contacts">Contact</a></li>
       <li><a href="/support">Support</a></li>
+      <li><a href="/delivery">Delivery</a></li>
       <li><a href="/donate">Donate</a></li>
       <li><a href="https://blog.thistledewflowers.com" target="_blank" rel="noopener noreferrer">Blog</a></li>
     </ul>
@@ -89,7 +92,7 @@
         <h3 style="text-align:center;">Life on the Farm</h3>
         <div class="photo-grid">
           <img src="images/flower-arrangement-bouquet.jpg" alt="Flower arrangement from our Colorado Springs flower farm" width="300" height="230" loading="lazy">
-          <img src="images/Flowerlogo-real.png" alt="Thistle Dew Green logo" width="300" height="230" loading="lazy">
+          <img src="images/Flowerlogo-320.png" alt="Thistle Dew Green logo" width="300" height="230" loading="lazy">
           <img src="images/colorado-flower-farm.jpg" alt="Seasonal blooms grown on our Colorado flower farm" width="300" height="230" loading="lazy">
         </div>
         <p style="text-align:center; margin-top:18px; margin-bottom:0;">
@@ -102,7 +105,7 @@
 
   <footer>
     <p class="footer-location">Serving Colorado Springs, Colorado &amp; surrounding areas</p>
-    <p>All content copyright &copy; 2025 Thistle Dew Green &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
+    <p>All content copyright &copy; 2026 Thistle Dew Green &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
   </footer>
 
   <script>
@@ -119,6 +122,12 @@
         });
       });
     });
+  </script>
+  <script type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+  <script type="text/javascript">
+      aclib.runAutoTag({
+          zoneId: 'o96niwzxs1',
+      });
   </script>
 </body>
 </html>

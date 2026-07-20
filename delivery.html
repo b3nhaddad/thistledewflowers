@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Donate — Support Thistle Dew Green | Colorado Springs</title>
+  <title>Delivery — Thistle Dew Green | Colorado Springs Flower Delivery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Support Thistle Dew Green, a Colorado Springs organic flower farm, with a donation via Venmo. Your generosity helps us keep flowers affordable and accessible for our community.">
-  <link rel="canonical" href="https://thistledewflowers.com/donate">
+  <meta name="description" content="Order locally grown organic flowers for delivery within Colorado Springs, Colorado — fresh bouquets from Thistle Dew Green, delivered to your door.">
+  <link rel="canonical" href="https://thistledewflowers.com/delivery">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Thistle Dew Green">
-  <meta property="og:title" content="Donate — Support Thistle Dew Green | Colorado Springs">
-  <meta property="og:description" content="Support our Colorado Springs organic flower farm with a Venmo donation — helping us keep flowers affordable and accessible for our community.">
-  <meta property="og:url" content="https://thistledewflowers.com/donate">
+  <meta property="og:title" content="Delivery — Thistle Dew Green | Colorado Springs Flower Delivery">
+  <meta property="og:description" content="Order locally grown organic flowers for delivery within Colorado Springs, Colorado.">
+  <meta property="og:url" content="https://thistledewflowers.com/delivery">
   <meta property="og:image" content="https://thistledewflowers.com/images/Flowerlogo-real.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Donate — Support Thistle Dew Green | Colorado Springs">
-  <meta name="twitter:description" content="Support our Colorado Springs organic flower farm with a Venmo donation — helping us keep flowers affordable and accessible for our community.">
+  <meta name="twitter:title" content="Delivery — Thistle Dew Green | Colorado Springs Flower Delivery">
+  <meta name="twitter:description" content="Order locally grown organic flowers for delivery within Colorado Springs, Colorado.">
   <meta name="twitter:image" content="https://thistledewflowers.com/images/Flowerlogo-real.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +28,7 @@
     }
   </script>
   <script defer src="js/app.js"></script>
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
 
 <body>
@@ -38,40 +39,38 @@
       <li><a href="/photos">Pictures</a></li>
       <li><a href="/contacts">Contact</a></li>
       <li><a href="/support">Support</a></li>
-      <li><a href="/delivery">Delivery</a></li>
-      <li><a href="/donate" class="active">Donate</a></li>
+      <li><a href="/delivery" class="active">Delivery</a></li>
+      <li><a href="/donate">Donate</a></li>
       <li><a href="https://blog.thistledewflowers.com" target="_blank" rel="noopener noreferrer">Blog</a></li>
     </ul>
   </nav>
 
   <div class="page-header hidden">
-    <h1>Donate</h1>
+    <h1>Flower Delivery</h1>
   </div>
 
   <div class="container">
 
     <section class="hidden" style="padding:0 0 24px;">
       <div class="card" style="text-align:center;">
-        <img src="images/venmo.JPG" alt="Donate via Venmo — @Karen-Haddad-6" class="donate-venmo-img" width="340" height="358" loading="lazy">
-
-        <h2>Support Our Mission</h2>
-
-        <p style="font-size:1.1rem; max-width:680px; margin:0 auto 1em;">
-          Thistle Dew Green is a passion project by Karen Haddad. We price flowers on a needs-based system
-          rather than a fixed rate, keeping them as affordable as possible — and often free — for proms, weddings,
-          and other events for Colorado youth.
-        </p>
         <p style="font-size:1.1rem; max-width:680px; margin:0 auto 1.5em;">
-          If you'd like to help us keep the farm running and keep flowers accessible for the community, a Venmo
-          contribution goes a long way. Looking to request flowers for your own event instead? Visit our
-          <a href="/support">Support page</a> for pricing and details.
+          Order a bouquet of locally grown, organic flowers and we'll deliver it right to your door —
+          currently available within Colorado Springs, Colorado.
         </p>
 
-        <a href="https://venmo.com/Karen-Haddad-6"
-           target="_blank" rel="noopener noreferrer"
-           class="btn btn-blue">
-          Donate via Venmo
-        </a>
+        <p id="delivery-message" style="display:none; font-size:1.05rem; max-width:520px; margin:0 auto; color:#4a7c59;">
+          Sorry — flower delivery is currently only available within Colorado Springs, Colorado.
+          Interested in flowers for a wedding, prom, or event outside our delivery area?
+          Visit our <a href="/support">Support page</a> to get in touch.
+        </p>
+
+        <stripe-buy-button
+          id="stripe-checkout"
+          buy-button-id="buy_btn_1TvPXYEdOohnphMsLyCejCLO"
+          publishable-key="pk_live_51RdnCCEdOohnphMsFaIfiocWXzcupzToVpC2s4RwuFwsbM1tGAqYIq8xRD8VQbYCRzUpAmqJLUG08iwqeSo1KsSE00qIAYXZGm"
+          style="display:none;"
+        >
+        </stripe-buy-button>
       </div>
     </section>
 
@@ -81,6 +80,7 @@
     <p class="footer-location">Serving Colorado Springs, Colorado &amp; surrounding areas</p>
     <p>All content copyright &copy; 2026 Thistle Dew Green &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
   </footer>
+  <script src="js/location.js"></script>
   <script type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
   <script type="text/javascript">
       aclib.runAutoTag({

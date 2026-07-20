@@ -20,6 +20,9 @@
 /support
   Content-Type: text/html; charset=utf-8
 
+/delivery
+  Content-Type: text/html; charset=utf-8
+
 /donate
   Content-Type: text/html; charset=utf-8
 
